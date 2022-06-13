@@ -1,0 +1,42 @@
+{
+  "name": "@klick-app/utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist-types/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IceBreaker-Org/utils.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IceBreaker-Org/utils/issues"
+  },
+  "homepage": "https://github.com/IceBreaker-Org/utils#readme",
+  "dependencies": {
+    "typescript": "^4.7.3"
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./functions/*": "./dist/functions/*.js"
+  },
+  "typesVersions": {
+    "*": {
+      "functions/*": [
+        "dist-types/functions/*.d.ts"
+      ]
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.42",
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
+    "eslint": "^8.17.0"
+  }
+}
