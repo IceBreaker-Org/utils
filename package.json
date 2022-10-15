@@ -1,12 +1,13 @@
 {
   "name": "@klick-app/utils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "dist/index.js",
   "types": "dist-types/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "bump:version": "npm version patch --no-git-tag-version"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/IceBreaker-Org/utils#readme",
   "dependencies": {
+    "nodemailer": "^6.8.0",
     "typescript": "^4.7.3"
   },
   "exports": {
@@ -35,6 +37,7 @@
   },
   "devDependencies": {
     "@types/node": "^17.0.42",
+    "@types/nodemailer": "^6.4.6",
     "@typescript-eslint/eslint-plugin": "^5.28.0",
     "@typescript-eslint/parser": "^5.28.0",
     "eslint": "^8.17.0"
