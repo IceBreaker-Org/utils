@@ -16,7 +16,7 @@ export class Mailer {
 
   public async send(to: string, subject: string, message: string): Promise<any> {
     const mailOptions: Mail.Options = {
-      from: 'Barter Team 😀 <barter.auth.app@gmail.com>',
+      from: 'Klick Team 😀',
       to,
       subject,
       html: message,
